@@ -1,0 +1,472 @@
+@font-face {
+  font-family: 'IRANSans-bold';
+  src: url("../fonts/iransans/IRANSans-Bold-web.eot");
+  src: url("../fonts/iransans/IRANSans-Bold-web.eot?#iefix") format("eot"), url("../fonts/iransans/IRANSans-Bold-web.woff2") format("woff2"), url("../fonts/iransans/IRANSans-Bold-web.woff") format("woff"), url("../fonts/iransans/IRANSans-Bold-web.ttf") format("ttf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'IRANSans-web';
+  src: url("../fonts/iransans/IRANSans-web.eot");
+  src: url("IRANSans-web.eot?#iefix") format("eot"), url("../fonts/iransans/IRANSans-web.woff2") format("woff2"), url("../fonts/iransans/IRANSans-web.woff") format("woff"), url("../fonts/iransans/IRANSans-web.ttf") format("ttf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/MaterialIcons-Regular.eot);
+  /* For IE6-8 */
+  src: local("Material Icons"), local("MaterialIcons-Regular"), url(../fonts/MaterialIcons-Regular.woff2) format("woff2"), url(../fonts/MaterialIcons-Regular.woff) format("woff"), url(../fonts/MaterialIcons-Regular.ttf) format("truetype");
+}
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: rtl;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+/*===========MY-CSS===========*/
+:focus {
+  outline: none;
+}
+
+::-moz-focus-inner {
+  border: 0;
+}
+
+body {
+  background-color: #fafafa;
+  margin-bottom: 500px;
+}
+
+html {
+  direction: rtl;
+  font-family: 'IRANSans-web';
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: IRANSans-bold;
+  line-height: 28px;
+}
+
+h1 {
+  font-size: 21px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+h3 {
+  font-size: 15px;
+  margin-top: 0px;
+  margin-bottom: 0;
+}
+
+h4 {
+  font-size: 12px;
+}
+
+h5 {
+  font-size: 11px;
+}
+
+h6 {
+  font-size: 10px;
+}
+
+.nav-bk {
+  position: absolute;
+  z-index: 10;
+  background-color: rgba(53, 53, 53, 0.4);
+  direction: ltr;
+}
+
+nav .menu-top-bk li {
+  float: right !important;
+}
+nav .nav-wrapper ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+nav ul a {
+  font-size: 13px;
+}
+
+.brand-logo {
+  padding: 5px;
+}
+
+.beatkhor-logo {
+  width: 40px;
+  height: 55px;
+  background: url(../img/logo-beatkhor.png) no-repeat;
+  margin-top: 5px;
+}
+
+.bgheader {
+  height: 270px;
+  overflow: hidden;
+}
+.bgheader img {
+  width: 100%;
+}
+
+.search-row input[type=text]:not(.browser-default),
+.search-form-mobile input[type=text]:not(.browser-default) {
+  font: inherit;
+  background-color: white;
+  border-radius: 3px;
+  padding-right: 9px;
+}
+
+.search-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-col input[type=text]:not(.browser-default):focus:not([readonly]),
+.search-form-mobile input[type=text]:not(.browser-default):focus:not([readonly]) {
+  border-bottom: 1px solid #ff8a80;
+  border-top: 0;
+  box-shadow: unset;
+}
+
+.search-row ::-webkit-input-placeholder {
+  color: #808080;
+}
+
+.search-row ::-moz-placeholder {
+  color: #808080;
+}
+
+.search-row ::-ms-placeholder {
+  color: #808080;
+}
+
+.search-row form .btn {
+  font: inherit;
+  height: 45px;
+}
+
+.search-row form input[type=text] {
+  width: 500px;
+}
+
+.carousel .indicators {
+  direction: ltr;
+}
+
+.search-row-mobile {
+  top: 200px;
+  right: 1%;
+  left: 1%;
+  position: absolute;
+}
+
+.search-form-mobile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search-form-mobile input,
+.search-form-mobile .btn {
+  font: inherit;
+  text-align: center;
+}
+.search-form-mobile .btn {
+  height: 40px;
+  padding-left: 30px;
+  padding-right: 20px;
+  margin-right: 8px;
+  margin-top: -10px;
+}
+
+header .header .card {
+  height: auto;
+  margin: 6px 0px;
+}
+
+.content-title {
+  padding: 0px 0px;
+}
+.content-title .content-title a:hover {
+  color: #d50000 !important;
+}
+
+.content-title i,
+.card-content .card-title i {
+  position: relative;
+  top: 0.5rem;
+}
+
+.post-card .card-title {
+  font-size: 13px;
+  right: 0;
+  padding: 16px;
+}
+.post-card .card .card-image .card-title {
+  padding: 14px;
+}
+.post-card .card .card-image .card-title-back {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 20px;
+  max-width: 100%;
+  background: linear-gradient(to top, black, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0));
+  padding: 35px;
+  opacity: .6;
+}
+
+.collection .collection-item.avatar {
+  padding-left: 0;
+  padding-right: 72px;
+}
+.collection .collection-item.avatar:not(.circle-clipper) > .circle,
+.collection .collection-item.avatar :not(.circle-clipper) > .circle {
+  left: unset;
+  right: 15px;
+}
+.collection .collection-item.avatar .secondary-content {
+  right: unset;
+  left: 16px;
+}
+.collection .collection-item.avatar .title {
+  font-size: 14px;
+  font-weight: 800;
+}
+.collection .collection-item.avatar p {
+  font-size: 12px;
+  color: #6b6b6b;
+  padding-left: 50px;
+}
+
+ul:not(.browser-default) {
+  padding-left: unset;
+  padding-right: 0;
+}
+
+.parallax-container {
+  height: auto;
+  padding-top: 7.5px;
+  padding-bottom: 1.3rem;
+}
+.parallax-container .collection .collection-item a.title {
+  color: black;
+  transition: color ease 0.1s;
+}
+.parallax-container .collection .collection-item a.title:hover {
+  color: #ff5252;
+}
+.parallax-container .parallax-collection-title {
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.no-border {
+  border: 0;
+}
+
+.design-process-section {
+  background-color: #eeeeee;
+}
+
+.process-model {
+  list-style: none;
+  padding: 0;
+  position: relative;
+  margin: 43px auto 40px;
+  border: none;
+  z-index: 0;
+}
+.process-model li {
+  display: inline-block;
+  width: 23.56%;
+  text-align: center;
+  float: none;
+}
+.process-model li::after {
+  background: #ff8a80 none repeat scroll 0 0;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 4px;
+  margin: 0 auto;
+  position: absolute;
+  right: 0px;
+  left: 50px;
+  top: 35px;
+  width: 75%;
+  z-index: -1;
+}
+.process-model li:last-child::after {
+  width: 0;
+}
+.process-model li i {
+  display: block;
+  height: 70px;
+  width: 70px;
+  text-align: center;
+  margin: 0 auto;
+  background: #ff5252;
+  color: white;
+  border: 2px solid #ff5252;
+  line-height: 75px;
+  font-size: 30px;
+  border-radius: 50%;
+  transition: ease-in-out .07s;
+  cursor: default;
+}
+.process-model li i:hover {
+  background-color: white;
+  color: #ff5252;
+}
+.process-model li p {
+  font-size: 14px;
+  margin-top: 19px;
+}
+
+.mobile-process-section .card i {
+  position: relative;
+  top: 10px;
+  margin-bottom: 0px;
+  font-size: 120px;
+  color: #ff5252;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mobile-process-section .card .card-content {
+  padding-top: 0;
+}
+.mobile-process-section .card .card-content .card-title {
+  padding-top: 8px;
+}
+.mobile-process-section .card .card-content p {
+  line-height: 35px;
+}
+
+@media screen and (min-width: 1420px) {
+  .process-model li {
+    max-width: 24.6%;
+    float: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .process-model li {
+    max-width: 24.5%;
+    float: none;
+  }
+  .process-model li i {
+    font-size: 55px !important;
+  }
+}
+@media screen and (min-width: 1050px) {
+  .process-model li {
+    max-width: 24.4%;
+    float: none;
+  }
+  .process-model li i {
+    height: 108px !important;
+    width: 108px !important;
+    line-height: 105px !important;
+  }
+  .process-model li p {
+    font-size: 12px !important;
+  }
+
+  .process-model li::after {
+    top: 53px !important;
+  }
+}
+@media only screen and (min-width: 993px) {
+  .beatkhor-logo {
+    margin: 8px 20px;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+  .search-row form input[type=text] {
+    width: 400px;
+  }
+  .search-row form .btn {
+    font: inherit;
+    height: 43px;
+  }
+
+  .carousel.carousel-slider .carousel-fixed-item.with-indicators {
+    bottom: 40px;
+  }
+
+  .content-title {
+    font-size: 13px;
+  }
+  .content-title a {
+    font-size: 13px;
+  }
+  .content-title i {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .process-model li {
+    max-width: 24.3%;
+    float: none;
+  }
+  .process-model li i {
+    height: 90px;
+    width: 90px;
+    font-size: 45px;
+    line-height: 90px;
+  }
+  .process-model li p {
+    font-size: 10.5px;
+  }
+
+  .process-model li::after {
+    top: 45px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .card .card-title {
+    padding: 11px;
+  }
+
+  .nav-bk {
+    background-color: #f44336;
+    position: fixed;
+  }
+
+  .parallax-container .container {
+    width: 100%;
+  }
+
+  .content-title .btn-flat {
+    font-size: 15px;
+    position: relative;
+    top: 2px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
